@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, type ElementType } from "react";
+import { Fragment, useEffect, useRef, type ElementType } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -59,10 +59,20 @@ export default function TextReveal({
 
   return (
     <Tag ref={ref} className={className} aria-label={text}>
-      {text.split("").map((ch, i) => (
-        <span key={i} className="rl" aria-hidden="true">
-          {ch === " " ? " " : ch}
-        </span>
+      {text.split(" ").map((word, wi, arr) => (
+        <Fragment key={wi}>
+          {/* Each word is an unbreakable inline-block so it can never split across
+              lines (e.g. "beneath" -> "beneat" + "h"). The space between words stays
+              a normal break point. Letters inside still animate individually. */}
+          <span className="rl-word" aria-hidden="true">
+            {word.split("").map((ch, ci) => (
+              <span key={ci} className="rl">
+                {ch}
+              </span>
+            ))}
+          </span>
+          {wi < arr.length - 1 ? " " : null}
+        </Fragment>
       ))}
     </Tag>
   );

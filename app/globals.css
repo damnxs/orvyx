@@ -77,6 +77,10 @@ html.lenis body {
   display: inline-block;
   will-change: transform, opacity, filter;
 }
+.rl-word {
+  display: inline-block;
+  white-space: nowrap;
+}
 
 .grain {
   position: fixed;
