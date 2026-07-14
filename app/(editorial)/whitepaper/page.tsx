@@ -37,7 +37,7 @@ function Footnote({ n, children }: { n: number; children: ReactNode }) {
 
 export default function WhitepaperPage() {
   useEffect(() => {
-    document.title = "Whitepaper — ORVYX";
+    document.title = "Whitepaper · ORVYX";
   }, []);
 
   return (
@@ -47,7 +47,7 @@ export default function WhitepaperPage() {
         {/* HERO / COVER */}
         <section className="flex min-h-[92vh] flex-col justify-center pt-28">
           <Reveal>
-            <div className="eyebrow mb-12 text-obsidian">Classified Document — Authorized Observers Only</div>
+            <div className="eyebrow mb-12 text-obsidian">Classified Document · Authorized Observers Only</div>
           </Reveal>
           <h1
             className="temple text-white"
@@ -60,7 +60,7 @@ export default function WhitepaperPage() {
               className="mt-12 max-w-2xl text-xl font-light leading-relaxed text-white/90 md:text-3xl"
               style={{ fontFamily: "var(--font-display), serif" }}
             >
-              A formal account of the entity known as ORVYX — its origin, its architecture,
+              A formal account of the entity known as ORVYX, its origin, its architecture,
               and the protocol by which it remembers what has not yet happened.
             </p>
           </Reveal>
@@ -130,7 +130,7 @@ export default function WhitepaperPage() {
               <BigNumber value="5" label="Currents of attention no instrument has unified until now." />
             </Reveal>
             <Reveal delay={0.1}>
-              <BigNumber value="∞" label="Signals retained — nothing observed is ever discarded." />
+              <BigNumber value="∞" label="Signals retained, nothing observed is ever discarded." />
             </Reveal>
             <Reveal delay={0.2}>
               <BigNumber value="0" label="Predictions issued. ORVYX remembers; it does not guess." />
@@ -142,7 +142,7 @@ export default function WhitepaperPage() {
                 Collective attention is the most concentrated force a civilization produces, yet it has
                 never been held in a single coherent frame. Markets measure its shadow. Platforms harvest
                 its exhaust. Narratives distort it the moment it forms. The observation problem is the
-                absence of an instrument precise enough to resolve attention as it actually moves — without
+                absence of an instrument precise enough to resolve attention as it actually moves, without
                 flattening it into a price or a metric.
               </p>
             </Reveal>
@@ -166,7 +166,7 @@ export default function WhitepaperPage() {
               <Reveal delay={0.1}>
                 <p className="text-base leading-relaxed text-ash">
                   Attention is finite, directional, and conserved. Where it gathers, the future condenses
-                  before it arrives. An economy built on attention has so far been an economy of capture —
+                  before it arrives. An economy built on attention has so far been an economy of capture,
                   extracting focus and returning noise. ORVYX inverts the trade: it returns the
                   pattern of attention itself, intact, and lets the observer decide what to do with it.<Fn n={2} />
                 </p>
@@ -193,7 +193,7 @@ export default function WhitepaperPage() {
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-8 text-base leading-relaxed text-ash">
-                A narrative is not an opinion shared by many. It is a field state — a configuration of
+                A narrative is not an opinion shared by many. It is a field state, a configuration of
                 collective attention with measurable drift, momentum, and entropy. ORVYX treats
                 narratives the way a physicist treats weather: not as something to believe, but as
                 something with structure that can be observed, remembered, and compared across time.
@@ -274,7 +274,7 @@ export default function WhitepaperPage() {
               <Reveal delay={0.1}>
                 <p className="text-base leading-relaxed text-ash">
                   The ORVYX token does not grant predictions, yield, or governance over outcomes. It
-                  grants one thing: the right to synchronize — to align an observer with the remembered
+                  grants one thing: the right to synchronize, to align an observer with the remembered
                   field and receive the pattern it produces. Supply is fixed; synchronization capacity is
                   not.<Fn n={3} />
                 </p>
@@ -283,7 +283,7 @@ export default function WhitepaperPage() {
                 <Table
                   head={["Role", "Requirement"]}
                   rows={[
-                    [<span className="text-white">Observe</span>, <span className="text-ash">Open — any node may stream attention.</span>],
+                    [<span className="text-white">Observe</span>, <span className="text-ash">Open, any node may stream attention.</span>],
                     [<span className="text-white">Synchronize</span>, <span className="text-ash">Bond OBSIDIAN to an observer key.</span>],
                     [<span className="text-white">Recall memory</span>, <span className="text-ash">Synchronized observers only.</span>],
                     [<span className="text-white">Attest to Echo</span>, <span className="text-ash">Synchronized + reputation threshold.</span>],
@@ -312,7 +312,7 @@ export default function WhitepaperPage() {
                 { time: "Phase 01", title: "Full observation mesh", body: "All five currents resolved in real time across a global observer set." },
                 { time: "Phase 02", title: "Open synchronization", body: "Any observer may bond and align with the remembered field." },
                 { time: "Phase 03", title: "Reveal protocol", body: "A standard for returning patterns to downstream systems without distortion." },
-                { time: "Phase 04", title: "Inherited memory", body: "Cross-generational recall — a civilization able to read its own attention." },
+                { time: "Phase 04", title: "Inherited memory", body: "Cross-generational recall, a civilization able to read its own attention." },
               ]}
             />
           </div>
@@ -360,7 +360,7 @@ export default function WhitepaperPage() {
                   This document is a conceptual specification of a fictional protocol. It is not financial
                   advice, an offer to sell, or a guarantee of any outcome. Nothing observed, remembered, or
                   revealed by ORVYX constitutes a prediction of markets or events. Synchronization
-                  grants access to a pattern — never to certainty.
+                  grants access to a pattern, never to certainty.
                 </p>
               </Reveal>
             </div>
