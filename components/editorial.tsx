@@ -168,18 +168,46 @@ export function Table({ head, rows }: { head: string[]; rows: ReactNode[][] }) {
 
 export function Timeline({ items }: { items: { time: string; title: string; body: string }[] }) {
   return (
-    <div className="relative pl-8 md:pl-12">
-      <div className="absolute bottom-2 left-0 top-2 w-px bg-gradient-to-b from-obsidian/60 via-white/10 to-transparent" />
-      <Stagger>
+    <div className="relative">
+      {/* spine */}
+      <div className="absolute bottom-3 left-0 top-3 w-px bg-gradient-to-b from-obsidian/60 via-white/12 to-transparent" />
+      <div>
         {items.map((it, i) => (
-          <StaggerItem key={i} className="relative pb-12 last:pb-0">
-            <span className="absolute -left-[33px] top-1.5 h-2 w-2 rounded-full bg-obsidian shadow-[0_0_12px_#7D5CFF] md:-left-[45px]" />
+          <motion.div
+            key={i}
+            className="relative pb-14 pl-9 last:pb-0 md:pl-12"
+            initial={{ opacity: 0, y: 26, filter: "blur(8px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            viewport={{ once: true, margin: "-22% 0px" }}
+            transition={{ duration: 0.6, ease: EASE }}
+          >
+            {/* node — centered exactly on the spine (left-0 + -translate-x-1/2) */}
+            <span className="absolute left-0 top-2 -translate-x-1/2">
+              <motion.span
+                className="relative flex h-3.5 w-3.5 items-center justify-center"
+                initial={{ scale: 0, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                viewport={{ once: true, margin: "-22% 0px" }}
+                transition={{ duration: 0.5, ease: EASE, delay: 0.08 }}
+              >
+                <span className="absolute inset-0 rounded-full border border-obsidian/50" />
+                {/* breathing halo */}
+                <motion.span
+                  className="absolute inset-[-5px] rounded-full bg-obsidian/25 blur-[4px]"
+                  animate={{ opacity: [0.45, 0.95, 0.45], scale: [0.85, 1.12, 0.85] }}
+                  transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut", delay: i * 0.5 }}
+                />
+                {/* core */}
+                <span className="relative h-1.5 w-1.5 rounded-full bg-glow shadow-[0_0_10px_#A987FF]" />
+              </motion.span>
+            </span>
+
             <div className="eyebrow mb-2.5">{it.time}</div>
             <h4 className="temple mb-2.5 text-xl text-white md:text-2xl">{it.title}</h4>
             <p className="max-w-md text-sm leading-relaxed text-ash">{it.body}</p>
-          </StaggerItem>
+          </motion.div>
         ))}
-      </Stagger>
+      </div>
     </div>
   );
 }
