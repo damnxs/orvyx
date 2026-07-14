@@ -14,7 +14,7 @@ const COLS: { title: string; links: { label: string; href: string; soon?: boolea
     title: "Network",
     links: [
       { label: "Launch App", href: "#" },
-      { label: "X", href: "https://x.com" },
+      { label: "X", href: "https://x.com/orvyxnetwork" },
       { label: "Mirror", href: "#" },
       { label: "Governance", href: "#", soon: true },
     ],

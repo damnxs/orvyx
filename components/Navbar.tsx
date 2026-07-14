@@ -79,7 +79,7 @@ export default function Navbar({ trailing }: { trailing?: ReactNode }) {
         <div className="flex items-center gap-5">
           {trailing}
           <a
-            href="https://x.com"
+            href="https://x.com/orvyxnetwork"
             target="_blank"
             rel="noreferrer"
             aria-label="X"
