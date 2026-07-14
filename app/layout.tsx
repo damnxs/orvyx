@@ -17,7 +17,7 @@ const sans = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://orvyx.io"),
+  metadataBase: new URL("https://orvyx.xyz"),
   title: "ORVYX",
   description: "The future isn't predicted. It is remembered.",
   applicationName: "ORVYX",

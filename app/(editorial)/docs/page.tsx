@@ -333,7 +333,7 @@ export default function DocsPage() {
             </Reveal>
             <div className="mt-10">
               <CodeCard file="api/preview.sh">{`# Available at mainnet launch.
-curl https://api.orvyx.io/v1/echo \\
+curl https://api.orvyx.xyz/v1/echo \\
   -H "x-observer-key: $ORVYX_KEY"`}</CodeCard>
             </div>
           </section>

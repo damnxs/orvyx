@@ -4,7 +4,7 @@
 > Built for content creators, instructors, and social media: pull lines, hooks, concepts, and full page copy from here.
 
 **Project:** ORVYX
-**Domain (placeholder):** orvyx.io
+**Domain (placeholder):** orvyx.xyz
 **Social:** x.com/orvyxnetwork
 **Tagline:** *The future isn't predicted. It is remembered.*
 
@@ -221,7 +221,7 @@ Layers (base → top):
 
 **08 · API — Public read endpoints** *(Coming Soon)*
 > A read-only REST + streaming surface is being prepared for synchronized observers. It will expose Echo, Drift, and Consensus endpoints under signed observer keys.
-- Endpoint (preview): `api.orvyx.io/v1/echo`
+- Endpoint (preview): `api.orvyx.xyz/v1/echo`
 
 **09 · Roadmap — Toward full synchronization**
 - Observation mesh — 100% — Live
