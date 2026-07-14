@@ -284,7 +284,7 @@ export default function WhitepaperPage() {
                   head={["Role", "Requirement"]}
                   rows={[
                     [<span className="text-white">Observe</span>, <span className="text-ash">Open, any node may stream attention.</span>],
-                    [<span className="text-white">Synchronize</span>, <span className="text-ash">Bond OBSIDIAN to an observer key.</span>],
+                    [<span className="text-white">Synchronize</span>, <span className="text-ash">Bond ORVYX to an observer key.</span>],
                     [<span className="text-white">Recall memory</span>, <span className="text-ash">Synchronized observers only.</span>],
                     [<span className="text-white">Attest to Echo</span>, <span className="text-ash">Synchronized + reputation threshold.</span>],
                   ]}
