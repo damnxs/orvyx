@@ -154,7 +154,7 @@ export default function AboutPage() {
           <div className="eyebrow mb-10">Synchronization</div>
         </Reveal>
         <Reveal delay={0.1}>
-          <h2 className="temple max-w-[14ch] text-white" style={{ fontSize: "clamp(2.2rem, 7vw, 5.5rem)" }}>
+          <h2 className="temple max-w-[960px] text-white" style={{ fontSize: "clamp(2.2rem, 7vw, 5.5rem)" }}>
             Synchronization begins with observation.
           </h2>
         </Reveal>
