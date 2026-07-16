@@ -77,7 +77,7 @@ function useObsidianMaterial() {
 
   const material = useMemo(() => {
     const m = new THREE.MeshStandardMaterial({
-      color: new THREE.Color("#0a0a12"),
+      color: new THREE.Color("#0a0a0a"),
       metalness: 0.6,
       roughness: 0.32,
       envMapIntensity: 2.0,
