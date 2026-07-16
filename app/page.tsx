@@ -118,7 +118,7 @@ export default function Page() {
             <div className="eyebrow mb-10 md:mb-16">Established before time</div>
             <h1
               className="temple text-white"
-              style={{ fontSize: "clamp(2.7rem, 11vw, 9.5rem)", textShadow: "0 0 60px rgba(125,92,255,0.18)" }}
+              style={{ fontSize: "clamp(2.7rem, 11vw, 9.5rem)", textShadow: "0 0 60px rgba(204,255,0,0.18)" }}
             >
               <TextReveal text="ORVYX" className="block" />
             </h1>
@@ -169,7 +169,7 @@ export default function Page() {
             </div>
             <div
               className="temple my-6 tabular-nums md:my-10"
-              style={{ fontSize: "clamp(2.8rem, 12vw, 9rem)", color: "#A987FF", textShadow: "0 0 50px rgba(169,135,255,0.4)" }}
+              style={{ fontSize: "clamp(2.8rem, 12vw, 9rem)", color: "#CCFF00", textShadow: "0 0 50px rgba(204,255,0,0.4)" }}
             >
               <CountUp to={4218392} />
             </div>

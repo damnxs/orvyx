@@ -61,10 +61,10 @@ function Lights() {
   });
   return (
     <>
-      <hemisphereLight args={["#7D5CFF", "#050505", 0.25]} />
+      <hemisphereLight args={["#CCFF00", "#050505", 0.25]} />
       <ambientLight intensity={0.12} />
       <directionalLight ref={key} position={[2.5, 4, 3]} intensity={2.6} color="#ffffff" />
-      <pointLight position={[-3.5, -1, 3]} intensity={22} color="#7D5CFF" distance={26} decay={2} />
+      <pointLight position={[-3.5, -1, 3]} intensity={22} color="#CCFF00" distance={26} decay={2} />
       <pointLight position={[3.5, 1.5, -1.5]} intensity={14} color="#9CF4FF" distance={26} decay={2} />
       <pointLight position={[0, 0, 6]} intensity={10} color="#ffffff" distance={24} decay={2} />
     </>
@@ -123,10 +123,10 @@ export default function Scene({ onReady }: { onReady: () => void }) {
 
       <Suspense fallback={null}>
         <Environment resolution={256}>
-          <Lightformer form="rect" intensity={3} color="#7D5CFF" position={[-3, 1, 3]} scale={[4, 6, 1]} />
+          <Lightformer form="rect" intensity={3} color="#CCFF00" position={[-3, 1, 3]} scale={[4, 6, 1]} />
           <Lightformer form="rect" intensity={2.2} color="#9CF4FF" position={[3, -1, 2]} scale={[3, 3, 1]} />
           <Lightformer form="rect" intensity={1.4} color="#ffffff" position={[0, 4, -2]} scale={[6, 2, 1]} />
-          <Lightformer form="ring" intensity={2.2} color="#A987FF" position={[0, 0, 5]} scale={3} />
+          <Lightformer form="ring" intensity={2.2} color="#D6FF66" position={[0, 0, 5]} scale={3} />
         </Environment>
 
         <Lights />

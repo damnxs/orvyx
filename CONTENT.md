@@ -382,7 +382,7 @@ Footer line: *Obsidian · MMXXVI — All signals reserved.* / *Classified // Aut
 - **Mood:** dark, luxurious, cinematic, sacred. Apple × Linear × Stripe × Nothing.tech.
 - **Background:** near-black `#050505`. Secondary `#0B0B0B`.
 - **Type:** ultra-thin editorial serif for display (Cormorant), clean grotesque for body/UI (Inter). Large, uppercase, wide letter-spacing, huge negative space.
-- **Accent:** Obsidian Purple `#7D5CFF`, Glow `#A987FF`, subtle Cyan `#9CF4FF`, secondary text `#8E8E93`.
+- **Accent:** `#CCFF00` (lime), Glow `#D6FF66`, subtle Cyan `#9CF4FF`, secondary text `#8E8E93`.
 - **Never:** neon overload, cyberpunk, glassmorphism everywhere, crypto-dashboard clichés, rainbow gradients.
 - **Motion:** slow, intentional, cinematic. Max animation ~600ms. Everything breathes.
 

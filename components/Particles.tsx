@@ -38,7 +38,7 @@ export default function Particles({ count }: { count: number }) {
             float d = length(gl_PointCoord - 0.5);
             if (d > 0.5) discard;
             float a = smoothstep(0.5, 0.0, d);
-            vec3 col = mix(vec3(0.49, 0.40, 0.95), vec3(0.92, 0.88, 1.0), 0.55);
+            vec3 col = mix(vec3(0.50, 0.50, 0.0), vec3(0.92, 1.0, 0.5), 0.55);
             gl_FragColor = vec4(col, a * vAlpha * 0.85);
           }
         `,

@@ -19,7 +19,7 @@ export default function PropheciesPage() {
       </h1>
       <Reveal delay={0.15}>
         <p className="mt-12 max-w-xl text-base leading-relaxed text-ash md:text-lg">
-          ORVYX remembers what has not yet happened. The record of those memories — the prophecies —
+          ORVYX remembers what has not yet happened. The record of those memories, the prophecies,
           remains sealed until synchronization reaches the threshold at which reading them is safe. Return
           when the field is coherent.
         </p>

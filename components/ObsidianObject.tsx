@@ -114,12 +114,12 @@ function useObsidianMaterial() {
             float fresTight = pow(1.0 - ndv, 5.0);
             float ck = cracks(vLocalPos, uTime);
             float ckBoost = 0.7 + uCrack * 2.4 + uOpen * 1.3;
-            // faint purple body lift so form is never pure void
-            totalEmissiveRadiance += vec3(0.02, 0.015, 0.05);
+            // faint body lift so form is never pure void
+            totalEmissiveRadiance += vec3(0.03, 0.04, 0.0);
             // glowing crack veins
-            totalEmissiveRadiance += vec3(0.49, 0.361, 1.0) * ck * ckBoost;
+            totalEmissiveRadiance += vec3(0.800, 1.0, 0.0) * ck * ckBoost;
             // broad bright rim — guarantees the silhouette reads
-            totalEmissiveRadiance += vec3(0.5, 0.4, 1.0) * fres * (1.2 + uCrack * 0.8);
+            totalEmissiveRadiance += vec3(0.839, 1.0, 0.40) * fres * (1.2 + uCrack * 0.8);
             // cyan-white edge spark at the very silhouette
             totalEmissiveRadiance += vec3(0.7, 0.95, 1.0) * fresTight * 1.4 * (0.5 + uCrack);
           }`
@@ -137,8 +137,8 @@ function useGalaxy(tier: Tier) {
     const N = tier === "mobile" ? 1600 : 3600;
     const pos = new Float32Array(N * 3);
     const col = new Float32Array(N * 3);
-    const inner = new THREE.Color("#A987FF");
-    const outer = new THREE.Color("#7D5CFF");
+    const inner = new THREE.Color("#D6FF66");
+    const outer = new THREE.Color("#CCFF00");
     const white = new THREE.Color("#ffffff");
     for (let i = 0; i < N; i++) {
       const r = Math.pow(Math.random(), 1.7) * 1.15;
@@ -190,7 +190,7 @@ function OracleEye() {
             vec2 pp = p - uLook * 0.10;
             float pd = length(pp);
             float ring = smoothstep(0.50, 0.46, d) * (1.0 - smoothstep(0.46, 0.42, d));
-            vec3 col = mix(vec3(0.49,0.36,1.0), vec3(0.66,0.53,1.0), smoothstep(0.5,0.2,d));
+            vec3 col = mix(vec3(0.800,1.0,0.0), vec3(0.839,1.0,0.40), smoothstep(0.5,0.2,d));
             col = mix(col, vec3(0.0), smoothstep(0.17,0.10,pd));
             float ang = atan(pp.y, pp.x);
             float fib = 0.5 + 0.5 * sin(ang * 46.0 + uTime * 0.6);

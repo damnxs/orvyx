@@ -49,7 +49,7 @@ export default function AboutPage() {
         </Reveal>
         <h1
           className="temple max-w-[16ch] text-white"
-          style={{ fontSize: "clamp(2.8rem, 11vw, 10rem)", textShadow: "0 0 70px rgba(125,92,255,0.15)" }}
+          style={{ fontSize: "clamp(2.8rem, 11vw, 10rem)", textShadow: "0 0 70px rgba(204,255,0,0.15)" }}
         >
           <Reveal>Who is ORVYX?</Reveal>
         </h1>

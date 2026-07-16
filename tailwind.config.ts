@@ -12,8 +12,8 @@ const config: Config = {
         void: "#050505",
         coal: "#0B0B0B",
         ash: "#8E8E93",
-        obsidian: "#7D5CFF",
-        glow: "#A987FF",
+        obsidian: "#CCFF00",
+        glow: "#D6FF66",
         whisper: "#9CF4FF",
       },
       fontFamily: {

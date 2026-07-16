@@ -198,7 +198,7 @@ export function Timeline({ items }: { items: { time: string; title: string; body
                   transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut", delay: i * 0.5 }}
                 />
                 {/* core */}
-                <span className="relative h-1.5 w-1.5 rounded-full bg-glow shadow-[0_0_10px_#A987FF]" />
+                <span className="relative h-1.5 w-1.5 rounded-full bg-glow shadow-[0_0_10px_#CCFF00]" />
               </motion.span>
             </span>
 
@@ -221,7 +221,7 @@ export function PrincipleCard({ index, title, body }: { index: string; title: st
     >
       <div
         className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-        style={{ background: "radial-gradient(120% 80% at 50% 0%, rgba(125,92,255,0.12), transparent 70%)" }}
+        style={{ background: "radial-gradient(120% 80% at 50% 0%, rgba(204,255,0,0.12), transparent 70%)" }}
       />
       <div className="relative">
         <div className="eyebrow mb-10 text-obsidian">{index}</div>

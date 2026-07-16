@@ -51,7 +51,7 @@ export default function WhitepaperPage() {
           </Reveal>
           <h1
             className="temple text-white"
-            style={{ fontSize: "clamp(3rem, 13vw, 12rem)", textShadow: "0 0 80px rgba(125,92,255,0.16)" }}
+            style={{ fontSize: "clamp(3rem, 13vw, 12rem)", textShadow: "0 0 80px rgba(204,255,0,0.16)" }}
           >
             <Reveal>Whitepaper</Reveal>
           </h1>

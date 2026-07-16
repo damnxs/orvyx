@@ -4,8 +4,8 @@ export const COLORS = {
   coal: "#0B0B0B",
   text: "#FFFFFF",
   ash: "#8E8E93",
-  obsidian: "#7D5CFF",
-  glow: "#A987FF",
+  obsidian: "#CCFF00",
+  glow: "#D6FF66",
   whisper: "#9CF4FF",
 } as const;
 
