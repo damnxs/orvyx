@@ -113,13 +113,13 @@ function useObsidianMaterial() {
             float fres = pow(1.0 - ndv, 2.0);
             float fresTight = pow(1.0 - ndv, 5.0);
             float ck = cracks(vLocalPos, uTime);
-            float ckBoost = 0.7 + uCrack * 2.4 + uOpen * 1.3;
+            float ckBoost = 1.1 + uCrack * 2.6 + uOpen * 1.4;
             // faint body lift so form is never pure void
-            totalEmissiveRadiance += vec3(0.03, 0.04, 0.0);
+            totalEmissiveRadiance += vec3(0.05, 0.06, 0.0);
             // glowing crack veins
-            totalEmissiveRadiance += vec3(0.800, 1.0, 0.0) * ck * ckBoost;
+            totalEmissiveRadiance += vec3(0.900, 1.0, 0.0) * ck * ckBoost;
             // broad bright rim — guarantees the silhouette reads
-            totalEmissiveRadiance += vec3(0.839, 1.0, 0.40) * fres * (1.2 + uCrack * 0.8);
+            totalEmissiveRadiance += vec3(0.880, 1.0, 0.40) * fres * (1.7 + uCrack * 0.9);
             // cyan-white edge spark at the very silhouette
             totalEmissiveRadiance += vec3(0.7, 0.95, 1.0) * fresTight * 1.4 * (0.5 + uCrack);
           }`

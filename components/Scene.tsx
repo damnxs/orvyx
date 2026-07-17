@@ -114,7 +114,7 @@ export default function Scene({ onReady }: { onReady: () => void }) {
         antialias: false,
         alpha: false,
         powerPreference: "high-performance",
-        toneMappingExposure: 1.12,
+        toneMappingExposure: 1.22,
       }}
       camera={{ position: [0, 0, 6], fov: 35, near: 0.1, far: 100 }}
     >
